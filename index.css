@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;700;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* Utilities */
+.d-flex{
+    display: flex;
+}
+.btn-highlight{
+    background: #8CEBA6;
+}
+.top-margin{
+    margin-top: 50px;
+}
+
+/* Element specific style */
+
+/* Navbar */
+nav{
+    padding: 20px 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+nav div{
+    align-items: center;
+    gap: 60px;
+}
+nav div div a{
+    text-decoration: none;
+    color: #000000;
+    margin: 4px;
+    padding: 6px;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+/* Landing Section */
+.landing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.landing img{
+    height: 40vh;
+    width: auto;
+    margin: 5vh;
+}
+.landing a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+/* Chef Note Section */
+.chef-note{
+    margin: 15vh 10vw;
+    align-items: center;
+    gap: 30px;
+}
+.chef-note h2{
+    font-size: 80px;
+    font-family: 'Gilda Display', serif;
+    font-weight: 100;
+    width: 70%;
+}
+.chef-note h2:nth-child(2){
+    text-align: end;
+    color: #78BF8C;
+}
+.chef-note p{
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+}
+.chef-note p{
+    margin: 50px 2px;
+}
+
+/* Menu Section */
+.menu{
+    margin: 10vw 0;
+}
+.menu h1{
+    margin: 0 10vw;
+    font-size: 120px;
+    font-family: 'Gilda Display', serif;
+    font-weight: 100;
+    color: #CFF4D9;
+}
+.menu .menu-cards{
+    padding: 1vw 0vw 0vw 10vw;
+    gap: 10px;
+    overflow: auto;
+}
+.menu-cards::-webkit-scrollbar{
+    height: 0px;
+    width: 0px;
+}
+.menu .menu-cards img{
+    height: 80vh;
+}
+.menu .menu-cards p{
+    font-size: 26px;
+    font-family: 'Gilda Display', serif;
+    font-weight: 100;
+    margin: 5px 0px;
+}
+.arrows{
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 10vw;
+}
+.arrows img{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 3px;
+}
+.arrows img:nth-child(2){
+    transform: rotateY(180deg);
+}
+
+/* Gallery Section */
+.gallary{
+    margin-bottom: 40px;
+}
+.gallary h2{
+    /* width: 100%; */
+    font-family: 'Gilda Display', serif;
+    font-weight: 100;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.gallary div{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.gallary div img{
+    max-height: 92vh;
+}
+.gallary div div{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.gallary div div img{
+    max-height: 45vh;
+}
+
+/* Rating Section */
+.rating{
+    margin: 10vh 10vw;
+    gap: 30px;
+}
+.sidebar{
+    width: 11px;
+    height: 80vh;
+    background: #36363678;
+    border-radius: 2px;
+    margin-right: 60px;
+}
+.sidebar::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 30%;
+    background: #000000;
+    border-radius: 2px;
+}
+.rating-right-image{
+    height: 80vh;
+}
+.rating div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.rating div div img{
+    width: 30%;
+}
+.rating div div p{
+    margin: 8px 0px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+}
+.rating p:nth-child(2){
+    font-weight: 900;
+}
+.rating div div p:nth-child(4){
+    font-weight: 700;
+    color: #787878;
+}
+.map{
+    display: flex;
+    justify-content: center;
+}
+.map img{
+    width: 80vw;
+    margin-top: 5vh;
+}
+footer{
+    max-width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh;
+    background-color: #F1F9F3;
+    gap: 50px;
+}
+footer img{
+    height: 20vh;
+}
+
+footer div:nth-child(2) h2{
+    font-size: 20px;
+    font-family: 'Gilda Display', serif;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+footer div:nth-child(2) p{
+    font-family: 'Gilda Display', serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+footer div:nth-child(3) p:nth-child(1){
+    text-align: center;
+    margin: 15px 10px;
+    font-size: 20px;
+}
+footer div:nth-child(3) p:nth-child(2){
+    background: #E3DBDB;
+    padding: 10px 20px;
+    border-radius: 100px;
+    min-width: 15vw;
+}
+footer div:nth-child(3) p:nth-child(2)::after{
+    content: "Signup";
+    position: relative;
+    left: 10vw;
+    background: #1A5E2B;
+    padding: 10px 20px;
+    border-radius: 100px;
+}
+footer div:nth-child(4){
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+footer div:nth-child(4) img{
+    height: 40px;
+}
